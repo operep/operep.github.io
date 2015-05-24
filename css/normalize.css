@@ -4,41 +4,62 @@ header {
     background-image:url('/img/background.jpg');
     background-size: cover;
 	color: white;
-    }
-body {
-	background: light-grey;
 }
-    a {
-      color: white;
-    }
+
+body {
+	background: #d6d8d9 url('/img/body_background_2.png');
+	#font: 14px/20px Helvetica, sans-serif;
+	#text-shadow: rgba(255,255,255,.4) 0 1px 0;
+}
+
+a {
+	color: white;
+	font-size: 20px;
+}
+
+h1 {
+    font-size: 70px;
+	padding: 20px;
+}
+
+h2 {
+	font: 24px/30px Helvetica, sans-serif;
+	text-shadow: rgba(255,255,255,.4) 0 1px 0;
+	text-align: center;
+	max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+img {
+    margin: 40px 0px 0px 0px;
+    border: 7px solid white;
+    border-radius: 20px;
+}
+
+ul {
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+}
+
+li {
+    display: inline;
+    padding: 0px 10px 0px 10px;
+}
+
+article {
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+@media (max-width: 500px) {
     h1 {
-      font-size: 70px;
-    }
-    img {
-      margin: 40px 0px 0px 0px;
-      border: 7px solid white;
-      border-radius: 20px;
-    }
-    ul {
-      padding: 10px;
-      background: rgba(0,0,0,0.5);
+		font-size: 36px;
+        padding: 5px;
     }
     li {
-      display: inline;
-      padding: 0px 10px 0px 10px;
-    }
-    article {
-      max-width: 500px;
-      padding: 20px;
-      margin: 0 auto;
-    }
-    @media (max-width: 500px) {
-      h1 {
-        font-size: 36px;
-        padding: 5px;
-      }
-      li {
         padding: 5px;
         display: block;
-      }
     }
+}
